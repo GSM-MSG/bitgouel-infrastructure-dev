@@ -11,5 +11,5 @@ terraform {
 provider "aws" {
     region = "ap-northeast-2"
     access_key = var.bitgouel_access_key
-    secret_key = var.gauth_secret_key
+    secret_key = var.bitgouel_secret_key
 }
