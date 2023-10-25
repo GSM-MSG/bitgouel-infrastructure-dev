@@ -78,7 +78,7 @@ resource "aws_eip" "nat_ip" {
 # Create Nat Gateway
 
 resource "aws_nat_gateway" "bitgouel-nat" {
-    allocation_id = aws_eip.bitgouel-ip.id
+    allocation_id = aws_eip.nat_ip.id
     subnet_id = aws_subnet.bitgouel-public-subnet-2a.id
 
     tags = {
