@@ -7,3 +7,13 @@ variable "bitgouel_secret_key" {
     type = string
     default = "bitgouel_secret_key"
 }
+
+variable "db_password" {
+    description = "rds root user password"
+    type = string
+}
+
+variable "user_name" {
+    type = string
+}
+
