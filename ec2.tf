@@ -1,5 +1,3 @@
-
-
 resource "aws_instance" "bitgouel-main-server" {
   ami = "ami-04cebc8d6c4f297a3"
   instance_type = "t3.micro"
