@@ -1,8 +1,8 @@
 resource "aws_s3_bucket" "bitgouel-file_bucket" {
     bucket = "bitgouel-file-bucket"
-    acl = "private"
+    aws_bucket_s3_acl = "private"
 
-    tag = {
+    tags = {
         name = "bitgouel-file-bucket"
     }
 }
