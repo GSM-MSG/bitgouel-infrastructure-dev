@@ -1,3 +1,5 @@
+
+
 resource "aws_instance" "bitgouel-main-server" {
   ami = "ami-04cebc8d6c4f297a3"
   instance_type = "t3.micro"
@@ -6,7 +8,7 @@ resource "aws_instance" "bitgouel-main-server" {
   key_name = "bitgouel-key"
   associate_public_ip_address = false
   source_dest_check = false
-  aws_iam_instance_profile = aws_iam_instance_profile.ssm_instance_profile.name
+  iam_instance_profile = aws_iam_instance_profile.ssm_instance_profile.name
 
   tags = {
     Name = "bitgouel-main-server"
