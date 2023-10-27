@@ -1,6 +1,4 @@
-
 ## DB Subnet Group Setting
-
 resource "aws_db_subnet_group" "bitgouel-subnet-group" {
     name = "bitgouel-subnet-group"
     subnet_ids = [
