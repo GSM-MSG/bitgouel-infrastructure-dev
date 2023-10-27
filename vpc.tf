@@ -22,7 +22,7 @@ resource "aws_subnet" "bitgouel-public-subnet-2a" {
     availability_zone = data.aws_availability_zones.available.names[0]
 
     tags = {
-        "Name" = "hi-public-subnet-2a"
+        "Name" = "bitgouel-public-subnet-2a"
     }
 }
 
