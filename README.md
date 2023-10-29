@@ -5,4 +5,4 @@
 
 ### Architecture
 
-![](./architecture/bitgouel-dev.drawio.png)
+![](./architecture/bitgouel-dev-architecture.jpg)
