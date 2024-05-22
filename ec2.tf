@@ -1,5 +1,5 @@
 resource "aws_instance" "bitgouel-main-server" {
-  ami = "ami-04cebc8d6c4f297a3"
+  ami = "ami-0dfabddd52dec98c7"
   instance_type = "t3.micro"
   subnet_id = aws_subnet.bitgouel-private-subnet-2a.id
   vpc_security_group_ids = [aws_security_group.bitgouel-main-server-sg.id]
@@ -17,7 +17,7 @@ resource "aws_instance" "bitgouel-main-server" {
 }
 
 resource "aws_instance" "bitgouel-bastion" {
-    ami = "ami-04cebc8d6c4f297a3"
+    ami = "ami-0dfabddd52dec98c7"
     instance_type = "t2.micro"
     subnet_id =  "${aws_subnet.bitgouel-public-subnet-2a.id}"
     vpc_security_group_ids = [aws_security_group.bitgouel-bastion-sg.id]
